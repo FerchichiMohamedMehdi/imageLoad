@@ -24,7 +24,7 @@ public class ImageController {
     public ResponseEntity<byte[]> downloadImage(@PathVariable Long id) {
         byte[] imageData = imageService.downloadImage(id);
         return ResponseEntity.ok().body(imageData);
-    }
+    }}
 
 
 
