@@ -28,7 +28,4 @@ public class ImageService {
         imageRepository.save(image);
     }
 
-    public byte[] downloadImage(Long id) {
-        ImageEntity image = imageRepository.findById(id).orElse(null);
-        return (image != null) ? image.getImageData() : null;
-    }}
+}
